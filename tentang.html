@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SmartData - Tentang</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand-title">
+        <a href="index.html" class="nav-logo" aria-label="Beranda SmartData">
+        <img src="logo.png" alt="Logo SmartData" />
+        SmartData
+    </a>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kuis.html">Kuis</a></li>
+        <li><a href="simulasi.html">Simulasi</a></li>
+        <li><a href="tips.html">Tips Keamanan</a></li>
+        <li><a href="tentang.html"class="active" aria-current="page">Tentang</a></li>
+    </ul>
+    <div class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+
+    <!-- <h1>🔎 Tentang Aplikasi SmartData</h1>
+    <p>Aplikasi ini dibuat untuk edukasi masyarakat tentang pentingnya melindungi data pribadi.</p>
+    <p>Data tidak disimpan dan aplikasi ini tidak meminta input data asli.</p>
+    <p>Ini merupakan proyek kerja praktik di bidang cybersecurity.</p> -->
+    
+<main class="container mx-auto px-6 py-12">
+    <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Profile Card -->
+        <div class="w-full lg:w-1/3">
+            <div class="profile-card bg-white rounded-xl p-8 text-center">
+                <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-100">
+                    <img src="https://api.thecatapi.com/v1/images/search?format=src"
+                        alt="photo profile" class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Qurunul Bachri Rahma Diar Seff</h2>
+                <p class="text-blue-600 font-medium mb-4">Mahasiswa Ilmu Komputer</p>
+                <p class="text-gray-600 mb-6">Universitas Amikom Purwokerto</p>
+                <div class="flex justify-center space-x-4 mb-6">
+                    <a href="https://github.com/qurunul" class="social-icon text-blue-500 hover:text-blue-700 text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon text-blue-400 hover:text-blue-600 text-xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon text-blue-600 hover:text-blue-800 text-xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@qurunulbahri7767" class="social-icon text-red-500 hover:text-red-700 text-xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="border-t pt-6">
+                        <h3 class="font-semibold text-gray-700 mb-3">Informasi Kontak</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center justify-center">
+                                <i class="fas fa-envelope mr-2 text-blue-500"></i>
+                                21sa3042@student.amikompurwokerto.ac.id
+                            </li>
+                            <li class="flex items-center justify-center">
+                                <i class="fas fa-phone mr-2 text-blue-500"></i>
+                                +62 812-3456-7890
+                            </li>
+                            <li class="flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+                                Purwokerto, Indonesia
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Details -->
+            <div class="w-full lg:w-2/3">
+                <!-- About Section -->
+                <div class="bg-white rounded-xl p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Tentang Saya</h2>
+                    <div class="prose text-gray-600">
+                        <p>Saya adalah mahasiswa semester akhir jurusan Teknologi Informasi Fakultas Ilmu Komputer di Universitas Amikom Purwokerto dengan minat khusus dalam pengembangan web dan keamanan siber. Saya memiliki passion untuk menciptakan solusi teknologi yang bermanfaat bagi masyarakat.</p>
+                        <p class="mt-4">Proyek ini dikembangkan sebagai bagian dari tugas akhir saya dengan tujuan meningkatkan kesadaran masyarakat tentang pentingnya keamanan digital di era teknologi modern.</p>
+                    </div>
+                </div>
+                <!-- Education Section -->
+                <div class="bg-white rounded-xl p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Pendidikan</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-graduation-cap text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Universitas Amikom Purwokerto</h3>
+                                <p class="text-gray-600">Sarjana Ilmu Komputer</p>
+                                <p class="text-sm text-gray-500">2021 - Sekarang</p>
+                                <p class="text-gray-600 mt-2">IPK: 3.78/4.00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-school text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">SMA Negeri 5 Purwokerto</h3>
+                                <p class="text-gray-600">Jurusan IPS</p>
+                                <p class="text-sm text-gray-500">2018 - 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="bg-white rounded-xl p-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Keahlian</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-gray-700">Pengembangan Web</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-gray-700">Keamanan Siber</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-gray-700">UI/UX Design</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-gray-700">JavaScript</span>
+                                <span class="text-gray-600">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer>
+    &copy; 2025 SmartData. Semua hak dilindungi.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

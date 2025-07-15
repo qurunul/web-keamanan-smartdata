@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SmartData - Simulasi Risiko</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand-title">
+        <a href="index.html" class="nav-logo" aria-label="Beranda SmartData">
+        <img src="logo.png" alt="Logo SmartData" />
+        SmartData
+    </a>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kuis.html">Kuis</a></li>
+        <li><a href="simulasi.html" class="active" aria-current="page">Simulasi</a></li>
+        <li><a href="tips.html">Tips Keamanan</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+    <div class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<main>
+    <h1>🎯 Simulasi Risiko Kebocoran Data</h1>
+    <label for="data-pribadi">Pilih Jenis Data Pribadi:</label>
+    <select id="data-pribadi" aria-label="Pilih jenis data pribadi">
+        <option value="" disabled selected>-- Pilih data pribadi --</option>
+        <option value="nik">NIK</option>
+        <option value="nomor_hp">Nomor HP</option>
+        <option value="email">Email</option>
+        <option value="nama_ibu">Nama Ibu Kandung</option>
+    </select>
+    <button type="button" onclick="simulasiRisiko()" aria-label="Simulasikan risiko kebocoran data">
+        Simulasikan Risiko
+    </button>
+    <div id="hasil-simulasi" aria-live="polite" role="region" aria-atomic="true"></div>
+</main>
+<footer>
+    &copy; 2025 SmartData. Semua hak dilindungi.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

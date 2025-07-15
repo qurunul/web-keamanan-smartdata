@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SmartData - Kuis Keamanan Data</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand-title">
+        <a href="index.html" class="nav-logo" aria-label="Beranda SmartData">
+        <img src="logo.png" alt="Logo SmartData" />
+        SmartData
+    </a>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kuis.html" class="active" aria-current="page">Kuis</a></li>
+        <li><a href="simulasi.html">Simulasi</a></li>
+        <li><a href="tips.html">Tips Keamanan</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+    <div class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<div class="quiz-container">
+    <h1>🧩 Tes Seberapa Aman Datamu?</h1>
+    <form id="quizForm" novalidate>
+        <div class="question">
+            <h3>1. Apa yang paling mungkin terjadi jika data NIK kamu bocor?
+                <span class="tooltip" data-tooltip="NIK bisa bocor karena beberapa faktor:
+            Penyebabnya berupa: 
+            1. Mengunggah KTP di media sosial.
+            2. Mengisi formulir online dari sumber tidak resmi.
+            3. Tidak menyensor data pribadi saat berbagi dokumen.
+            4. Menggunakan Wi-Fi publik tanpa pengaman.
+            5. Ceroboh saat membuang atau menyimpan dokumen fisik seperti fotokopi KTP.">?</span>
+            </h3>
+            <label><input type="radio" name="q1" value="A"> Email kamu jadi lambat.</label>
+            <label><input type="radio" name="q1" value="B" required> Kamu bisa ditagih pinjaman online yang tidak kamu ajukan.</label>
+            <label><input type="radio" name="q1" value="C"> Koneksi internetmu melambat.</label>
+            <label><input type="radio" name="q1" value="D"> Akun game kamu terhapus.</label>
+        </div>
+        <div class="question">
+            <h3>2. Kamu sering menerima telepon yang meminta OTP. Apa yang sebaiknya kamu lakukan?</h3>
+            <label><input type="radio" name="q2" value="A"> Berikan OTP jika terdengar meyakinkan.</label>
+            <label><input type="radio" name="q2" value="B"> Tanya nama lengkap petugas.</label>
+            <label><input type="radio" name="q2" value="C" required> Jangan berikan kode OTP dan tutup telepon.</label>
+            <label><input type="radio" name="q2" value="D"> Rekam panggilan lalu upload.</label>
+        </div>
+        <div class="question">
+            <h3>3. Jika emailmu bocor, risiko utama yang bisa kamu alami adalah...?
+                <span class="tooltip" data-tooltip="Email  bocor terjadi karena beberapa faktor:
+                1. Menggunakan password yang lemah seperti '123456', 'namakamu123'.
+                2. Mengakses email pribadi di perangkat umum seperti di warnet dan komputer pinjaman tanpa logout.
+                3. Mengklik link palsu dari email/WA/SMS yang mirip seperti notifikasi resmi.
+                4. Tidak membaca izin saat instal aplikasi (permissions seperti 'akses email', 'baca kontak').
+                5. Tidak Mengaktifkan Verifikasi Dua Langkah (2FA)">?</span>
+            </h3>
+            <label><input type="radio" name="q3" value="A"> Email kamu jadi tidak bisa dibuka lagi.</label>
+            <label><input type="radio" name="q3" value="B" required> Mendapat banyak spam dan email penipuan.</label>
+            <label><input type="radio" name="q3" value="C"> Kuota internet cepat habis.</label>
+            <label><input type="radio" name="q3" value="D"> Laptop kamu hang.</label>
+        </div>
+        <div class="question">
+            <h3>4. Mengapa ‘nama ibu kandung’ bisa berbahaya jika diketahui?</h3>
+            <label><input type="radio" name="q4" value="A"> Karena dianggap tidak sopan.</label>
+            <label><input type="radio" name="q4" value="B" required> Bisa digunakan untuk menjawab pertanyaan keamanan akunmu.</label>
+            <label><input type="radio" name="q4" value="C"> Untuk menyebar hoaks.</label>
+            <label><input type="radio" name="q4" value="D"> Karena bisa diubah dengan mudah.</label>
+        </div>
+        <div class="question">
+            <h3>5. Langkah terbaik jika kamu merasa datamu telah bocor adalah...?</h3>
+            <label><input type="radio" name="q5" value="A"> Diam saja, pasti tidak apa-apa.</label>
+            <label><input type="radio" name="q5" value="B"> Ganti nomor HP dan alamat rumah.</label>
+            <label><input type="radio" name="q5" value="C" required> Ganti password, aktifkan autentikasi dua faktor.</label>
+            <label><input type="radio" name="q5" value="D"> Minta teman bantu logout dari akunnya.</label>
+        </div>
+        <div class="buttons-row">
+            <button type="button" id="submitBtn" onclick="submitQuiz()">Lihat Hasil</button>
+            <button type="button" id="nextBtn" style="display:none;" onclick="window.location.href='simulasi.html'">Lanjut ke Simulasi</button>
+        </div>
+    </form>
+    <div class="result" id="result"></div>
+</div>
+<footer>
+    &copy; 2025 SmartData. Semua hak dilindungi.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
